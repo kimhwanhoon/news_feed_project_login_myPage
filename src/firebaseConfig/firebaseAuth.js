@@ -36,8 +36,14 @@ import { getDownloadURL, getStorage, ref, uploadBytes } from 'firebase/storage';
 import { useEffect, useState } from 'react';
 import { doc, getDoc, getFirestore, setDoc } from 'firebase/firestore';
 
-const tempKey = process.env.REACT_APP_FIREBASE_CONFIG;
-const firebaseConfig = JSON.parse(tempKey);
+const firebaseConfig = {
+  apiKey: 'AIzaSyCr69BvGa7NdoJ-T0a8qNpCOkIoX2IMkk4',
+  authDomain: 'news-feed-team-project.firebaseapp.com',
+  projectId: 'news-feed-team-project',
+  storageBucket: 'news-feed-team-project.appspot.com',
+  messagingSenderId: '729941018888',
+  appId: '1:729941018888:web:4f2582f5d9e22b498884bd'
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
