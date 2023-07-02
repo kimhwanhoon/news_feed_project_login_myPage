@@ -36,7 +36,8 @@ import { getDownloadURL, getStorage, ref, uploadBytes } from 'firebase/storage';
 import { useEffect, useState } from 'react';
 import { doc, getDoc, getFirestore, setDoc } from 'firebase/firestore';
 
-const firebaseConfig = JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG);
+const tempKey = process.env.REACT_APP_FIREBASE_CONFIG;
+const firebaseConfig = JSON.parse(tempKey);
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
