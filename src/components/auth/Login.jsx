@@ -83,11 +83,11 @@ function LoginModal() {
           </div>
           <div className="modal-social-icon-container">
             <button onClick={(e) => loginWithGoogle(dispatch, e)}>
-              <img src="img/Google.png" alt="Google icon" />
+              <img src="https://i.ibb.co/TkxYBMy/google.png" alt="Google icon" />
               Google
             </button>
             <button onClick={(e) => loginWithGithub(dispatch, e)}>
-              <img src="img/github.png" alt="github icon" />
+              <img src="https://i.ibb.co/DWkNPQm/github.png" alt="github icon" />
               Github
             </button>
           </div>
